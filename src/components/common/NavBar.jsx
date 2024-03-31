@@ -111,14 +111,14 @@ const NavBar = ({ setProgress }) => {
                 <input
                   value={searchValue}
                   onChange={(e) => setSearchValue(e.target.value)}
-                  id="searchinput"
+                  id="searchinputmob"
                   type="text"
                   placeholder="Search"
                   className="border-0 focus:ring-1 ring-richblack-400 rounded-full px-2 py-1 md:text-[12px] lg:text-[14px] w-24 text-richblack-50 focus:outline-none focus:border-transparent bg-richblack-700"
                 />
                 <HiSearch
                   type="submit"
-                  id="searchicon"
+                  id="searchiconmob"
                   size={20}
                   className="text-richblack-100 absolute top-[6px] left-16 cursor-pointer"
                 />

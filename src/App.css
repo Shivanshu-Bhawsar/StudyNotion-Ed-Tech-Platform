@@ -228,6 +228,20 @@ details[open] summary .arrow {
     transform: translate(21px, 2px);
 }
 
+/* increase width on foucs of #searchinputmob */
+#searchinputmob:focus {
+    width: 130px;
+    scale: 1;
+    transition: all 0.2s linear;
+    transform-origin: left;
+}
+
+#searchinputmob:focus+#searchiconmob {
+    transition: all 0.2s linear;
+    scale: 1.1;
+    transform: translate(21px, 2px);
+}
+
 details summary::-webkit-details-marker {
     display: none !important;
 }
