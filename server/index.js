@@ -24,12 +24,11 @@ app.use(fileUpload({
     useTempFiles: true,
     tempFileDir: '/tmp/'
 }));
-// app.use(cors({
-//     origin: process.env.CORS_ORIGIN,
-//     credentials: true,
-//     maxAge: 14400,
-// }));
-app.use(cors());
+app.use(cors({
+    origin: process.env.CORS_ORIGIN,
+    credentials: true,
+    maxAge: 14400,
+}));
 
 // connections
 dbConnect();
