@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.homepage_bg {
+    background: url("../src/assets/Images/bghome.svg");
+}
+
+.grad {
+    position: absolute;
+    width: 372.95px;
+    height: 257.05px;
+    left: calc(50% - 372.95px/2 - 76.53px);
+    top: calc(50% - 257.05px/2 - 47.47px);
+
+    /* Gradient/02 */
+    background: linear-gradient(123.77deg, #8A2BE2 -6.46%, #FFA500 59.04%, #F8F8FF 124.53%);
+    opacity: 0.2;
+    filter: blur(34px);
+    transform: matrix(1, 0, -0.03, 1, 0, 0);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.grad2 {
+    position: absolute;
+    width: 372.95px;
+    height: 257.05px;
+    left: calc(50% - 372.95px/2 - 76.53px);
+    top: calc(50% - 257.05px/2 - 47.47px);
+
+    /* Gradient/05 */
+    background: linear-gradient(118.19deg, #1FA2FF -3.62%, #12D8FA 50.44%, #A6FFCB 104.51%);
+    opacity: 0.2;
+    filter: blur(34px);
+    transform: matrix(1, 0, -0.03, 1, 0, 0);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.glass2 {
+    /* From https://css.glass */
+    background: rgba(13, 18, 30, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(13, 18, 30, 0.3);
+}
+
+.video {
+    filter: drop-shadow(15px 15px 0px #F5F5F5);
+}
+
+.videograd {
+    position: absolute;
+    /* width: 372.95px;
+    height: 257.05px; */
+    width: 100%;
+    height: 90%;
+    top: -3%;
+
+    /* Gradient/05 */
+    background: linear-gradient(117.82deg, #9CECFB -9.12%, #65C7F7 48.59%, #0052D4 106.3%);
+    opacity: 40%;
+    filter: blur(34px);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.custom-loader {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    border: 8px solid #0000;
+    border-radius: 50%;
+    border-color: #E4E4ED #0000;
+    animation: s6 2s infinite linear;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 4px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.custom-loader::before {
+    border-color: #FFE83D #0000;
+    animation: inherit;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+
+.custom-loader::after {
+    margin: 16px;
+}
+
+@keyframes s6 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+.form-style {
+    color: #999DAA;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: .75rem;
+    padding-right: 2rem;
+    background-color: #161D29;
+    border-radius: .5rem;
+    box-shadow: 0px -1px 0px 0px #FFFFFF2E inset;
+}
+
+.lable-style {
+    color: #F1F2FF;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+/* to change color of calendar picker */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(.8);
+}
+
+/* to remove eye from password field */
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+    display: none;
+}
+
+.swiper-button-prev {
+    transform: translateX(-90%);
+    color: #dcdcdc !important;
+}
+
+.swiper-button-next {
+    transform: translateX(90%);
+    color: #dcdcdc !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(186, 32, 32) !important;
+}
+
+.swiper-pagination-bullet {
+    transform: translateY(180%);
+    background-color: rgb(255, 255, 255) !important;
+}
+
+details[open] summary~* {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-left: -18px
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px
+    }
+}
+
+/* details tag opening animation */
+details.detailanimatation {
+    transition: all 0.5s linear;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+details.detailanimatation[open] {
+    max-height: 1000px;
+}
+
+/* rotate className arrow on detail open */
+details[open] summary .arrow {
+    transform: rotatex(180deg);
+    transition: all 0.1s linear;
+}
+
+/* increase width on foucs of #searchinput */
+#searchinput:focus {
+    width: 130px;
+    scale: 1;
+    transition: all 0.2s linear;
+    transform-origin: left;
+}
+
+#searchinput:focus+#searchicon {
+    transition: all 0.2s linear;
+    scale: 1.1;
+    transform: translate(21px, 2px);
+}
+
+details summary::-webkit-details-marker {
+    display: none !important;
+}
+
+details>summary {
+    list-style: none !important;
+}
+
+details>summary::-webkit-details-marker {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .offSidebar1 {
+        width: 320px !important;
+        height: calc(100vh - 3.5rem) !important;
+    }
+
+    .offSidebar2 {
+        display: block !important;
+    }
+
+    .offSidebar3 {
+        width: fit-content !important;
+        height: fit-content !important;
+    }
+}
