@@ -98,7 +98,7 @@ const EnrolledCourses = () => {
   }
 
   return (
-    <div className="mx-auto w-11/12 max-w-[1000px] py-5">
+    <div className="mx-auto w-11/12 max-w-[1000px]">
       <div className="text-3xl font-medium text-richblack-5">Enrolled Courses</div>
 
       {/* Tabs Name */}

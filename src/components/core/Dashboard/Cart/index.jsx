@@ -17,7 +17,7 @@ export default function Cart() {
   }, []);
 
   return (
-    <div className="mx-auto w-11/12 max-w-[1000px] py-5">
+    <div className="mx-auto w-11/12 max-w-[1000px]">
       <h1 className="mb-8 text-3xl font-medium text-richblack-5">Cart</h1>
       <p className="border-b border-b-richblack-700 pb-2 text-base font-semibold text-richblack-400">
         {totalItems} Courses in Cart

@@ -7,7 +7,7 @@ import { IoCall } from "react-icons/io5";
 const ContactUs = () => {
   return (
     <div className="w-11/12 max-w-maxContent mx-auto">
-      <div className="mx-auto mt-20 w-11/12 max-w-maxContent flex flex-col justify-between gap-10 text-white lg:flex-row">
+      <div className="mx-auto mt-16 w-11/12 max-w-maxContent flex flex-col justify-between gap-10 text-white lg:flex-row">
         <div className="lg:w-[40%]">
           <div className="flex flex-col gap-6 rounded-xl bg-richblack-800 p-4 lg:p-6">
             <div className="flex gap-[10px] p-3 text-sm text-richblack-100">

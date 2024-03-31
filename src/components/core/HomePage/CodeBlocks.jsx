@@ -58,7 +58,7 @@ const CodeBlocks = ({
         >
           <div className={`${backgroudGradient}`}></div>
           <TypeAnimation
-            sequence={[codeblock, 2000, ""]}
+            sequence={[codeblock, 5000, ""]}
             repeat={Infinity}
             cursor={true}
             style={{

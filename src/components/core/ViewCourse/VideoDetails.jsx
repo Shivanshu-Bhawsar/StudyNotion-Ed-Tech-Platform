@@ -86,9 +86,6 @@ const VideoDetails = () => {
   };
 
   const nextLecture = () => {
-    // if (isLastLecture()) {
-    //   return;
-    // }
     const currentSectionIndex = courseSectionData?.findIndex(
       (section) => section._id === sectionId
     );
@@ -118,9 +115,6 @@ const VideoDetails = () => {
   };
 
   const previousLecture = () => {
-    // if (isFirstLecture()) {
-    //   return;
-    // }
     const currentSectionIndex = courseSectionData?.findIndex(
       (section) => section._id === sectionId
     );
@@ -207,7 +201,6 @@ const VideoDetails = () => {
                     onClick={previousLecture}
                     className="text-2xl md:text-5xl bg-richblack-600 rounded-full cursor-pointer hover:scale-90"
                   />
-                  {/* <button onClick={previousLecture} className='bg-blue-500 text-white px-4 py-2 rounded-md'>previous Lecture</button> */}
                 </div>
               )}
               {!isLastLecture() && (
@@ -217,7 +210,6 @@ const VideoDetails = () => {
                     onClick={nextLecture}
                     className="text-2xl md:text-5xl bg-richblack-600 rounded-full cursor-pointer hover:scale-90"
                   />
-                  {/* <button onClick={nextLecture} className='bg-blue-500 text-white px-4 py-2 rounded-md'>Next Lecture</button> */}
                 </div>
               )}
               {
@@ -237,7 +229,7 @@ const VideoDetails = () => {
       )}
 
       {/* video title and desc */}
-      <div className="mt-5">
+      <div className="my-5 ml-3">
         <h1 className="text-2xl font-bold text-richblack-25">
           {videoData?.title}
         </h1>

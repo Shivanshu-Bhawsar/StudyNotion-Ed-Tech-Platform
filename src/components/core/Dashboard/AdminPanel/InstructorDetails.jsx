@@ -27,8 +27,8 @@ export default function InstructorDetails() {
 
   return (
     <>
-      <div className="mx-auto w-11/12 max-w-[1000px] py-3 md:pb-10 lg:pb-0">
-        <div className="mb-14 flex items-center justify-between">
+      <div className="mx-auto w-11/12 max-w-[1000px] pb-10 lg:pb-0">
+        <div className="mb-10 flex items-center justify-between">
           <h1 className="text-3xl font-medium text-richblack-5">Instructors Details</h1>
         </div>
         <div>

@@ -12,54 +12,58 @@ const VideoDetailsSidebar = ({ setReviewModal }) => {
   const [activeSection, setActiveSection] = useState("");
   const [activeSubSection, setActiveSubSection] = useState("");
   const { courseId, sectionId, subsectionId } = useParams();
-  const {courseSectionData, courseEntireData, completedLectures, totalNoOfLectures} = useSelector(state => state.viewCourse);
+  const {
+    courseSectionData,
+    courseEntireData,
+    completedLectures,
+    totalNoOfLectures,
+  } = useSelector((state) => state.viewCourse);
   const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
-    ;(() => {
+    (() => {
       if (!courseSectionData.length) return;
-      
+
       const currentSectionIndex = courseSectionData.findIndex(
         (section) => section._id === sectionId
       );
-      const currentSubSectionIndex = courseSectionData?.[currentSectionIndex]?.subSection.findIndex(
-        (subSection) => subSection?._id === subsectionId
-      );
-      const activeSubSectionId = courseSectionData?.[currentSectionIndex]?.subSection?.[currentSubSectionIndex]?._id;
+      const currentSubSectionIndex = courseSectionData?.[
+        currentSectionIndex
+      ]?.subSection.findIndex((subSection) => subSection?._id === subsectionId);
+      const activeSubSectionId =
+        courseSectionData?.[currentSectionIndex]?.subSection?.[
+          currentSubSectionIndex
+        ]?._id;
       setActiveSection(courseSectionData?.[currentSectionIndex]?._id);
       setActiveSubSection(activeSubSectionId);
-    })()
+    })();
   }, [courseSectionData, courseEntireData, location.pathname]);
 
   return (
     <>
-      <div className={`${!showSidebar && "hidden"} w-6 relative`}>
+      {/* <div className={`${!showSidebar && "hidden"} w-6 relative`}>
         <FaAngleDoubleRight
           onClick={() => {
             setShowSidebar(false);
           }}
           className={`md:hidden z-10 absolute top-3 -left-1 m-2 text-2xl text-richblack-900 bg-richblack-100 rounded-full p-1 cursor-pointer`}
         />
-      </div>
+      </div> */}
 
       <div
-        className={`${
-          showSidebar && "hidden"
-        } transition-all origin-right duration-500 flex h-[calc(100vh-3.5rem)] w-[320px] max-w-[350px] flex-col border-r border-r-richblack-700 bg-richblack-800`}
+        className={` transition-all origin-right duration-500 flex h-[calc(100vh-3.5rem)] w-[320px] max-w-[350px] flex-col border-r border-r-richblack-700 bg-richblack-800`}
       >
-        <div
-          className="mx-5 flex flex-col items-start justify-between gap-2 gap-y-5 border-b border-richblack-600 py-5 text-lg font-bold text-richblack-25"
-        >
+        <div className="mx-5 flex flex-col items-start justify-between gap-2 gap-y-5 border-b border-richblack-600 py-5 text-lg font-bold text-richblack-25">
           <div className="w-full flex items-center justify-between">
             <div className="h-[35px] w-[35px] flex items-center justify-center rounded-full bg-richblack-100 p-1 text-richblack-700 hover:scale-90">
-              <FaChevronLeft
-                className="cursor-pointer md:hidden"
+              {/* <FaChevronLeft
+                className="cursor-pointer md:hidden w-full"
                 onClick={() => {
                   setShowSidebar(true);
                 }}
-              />
+              /> */}
               <FaChevronLeft
-                className="cursor-pointer hidden md:block"
+                className="cursor-pointer block w-full"
                 onClick={() => {
                   navigate(`/dashboard/enrolled-courses`);
                 }}
@@ -80,6 +84,7 @@ const VideoDetailsSidebar = ({ setReviewModal }) => {
           {courseSectionData?.map((section, index) => (
             <details
               key={index}
+              open={section._id === activeSection ? true : false}
               className="appearance-none text-richblack-5 detailanimatation"
             >
               <summary className="mt-2 cursor-pointer text-sm text-richblack-5 appearance-none">

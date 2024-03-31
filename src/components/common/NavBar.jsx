@@ -55,14 +55,14 @@ const NavBar = ({ setProgress }) => {
   };
 
   return (
-    <nav className="bg-richblack-900 flex items-center justify-center h-14 border-b-[1px] border-b-richblack-700">
+    <nav className={`${location.pathname.includes('dashboard') ? "bg-richblack-800" : "bg-richblack-900"} flex items-center justify-center h-14 border-b-[1px] border-b-richblack-700`}>
       <div className="w-11/12 max-w-maxContent flex items-center justify-between">
         <Link to="/">
           <img src={logo} width={160} height={52} alt="logo" />
         </Link>
 
         {/* Mobile Navbar Menu */}
-        <div className="w-full z-[1000] flex md:hidden relative top-7 left-20">
+        <div className={`w-full z-[1000] flex md:hidden relative top-7 ${user && user.accountType === "Student" ? "left-20" : "left-10" }`}>
           <div
             ref={overlay}
             className="hidden w-[100vw] h-[100vh] fixed top-0 bottom-0 left-0 right-0 z-30 overflow-y-hidden bg-[rgba(0,0,0,0.5)]"
@@ -241,12 +241,13 @@ const NavBar = ({ setProgress }) => {
                 placeholder="Search"
                 className="border-0 focus:ring-1 ring-richblack-400 rounded-full px-2 py-1 md:text-[12px] lg:text-[14px] w-24 text-richblack-50 focus:outline-none focus:border-transparent bg-richblack-700"
               />
-              <HiSearch
-                type="submit"
-                id="searchicon"
-                size={20}
-                className="text-richblack-100 absolute top-1 left-16 cursor-pointer"
-              />
+              <button type="submit">
+                <HiSearch
+                  id="searchicon"
+                  size={20}
+                  className="text-richblack-100 absolute top-1 left-16 cursor-pointer"
+                />
+              </button>
             </form>
           </ul>
         </div>

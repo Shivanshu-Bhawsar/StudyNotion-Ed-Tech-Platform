@@ -34,8 +34,8 @@ const ViewCourse = () => {
   }, [courseId, token, dispatch]);
 
   return (
-    <div className="flex w-screen">
-      <div className="">
+    <div className="flex flex-col-reverse md:flex-row w-screen">
+      <div className="ml-5">
         <VideoDetailsSidebar setReviewModal={setReviewModal} />
       </div>
       <div>

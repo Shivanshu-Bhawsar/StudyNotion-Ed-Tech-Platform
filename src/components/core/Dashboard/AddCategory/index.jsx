@@ -26,11 +26,11 @@ const AddCategory = () => {
   };
 
   return (
-    <div className="mx-auto w-10/12 max-w-[1000px] my-10 text-pure-greys-50 flex flex-col gap-7">
-      <h1 className="text-2xl sm:text-3xl">Add Category</h1>
+    <div className="mx-auto w-10/12 max-w-[1000px] my-8 flex flex-col gap-7">
+      <h1 className="text-3xl text-richblack-5">Add Category</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-7 p-6 rounded-md border border-richblack-700 bg-richblack-800">
         <div className="flex flex-col gap-2">
-          <label className="text-lg" htmlFor="category">Category Name</label>
+          <label className="text-lg text-richblack-25" htmlFor="category">Category Name</label>
           <input
             type="text"
             name="category"
@@ -43,7 +43,7 @@ const AddCategory = () => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="text-lg" htmlFor="category">Category Description</label>
+          <label className="text-lg text-richblack-25" htmlFor="category">Category Description</label>
           <textarea
             type="text"
             name="category"

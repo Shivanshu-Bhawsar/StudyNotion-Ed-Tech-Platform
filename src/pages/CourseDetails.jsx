@@ -30,6 +30,7 @@ const CourseDetails = () => {
   const [avgReviewCount, setAvgReviewCount] = useState(0);
   const [alreadyEnrolled, setAlreadyEnrolled] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handlePayment = async() => {
     setLoading(true);
@@ -99,7 +100,7 @@ const CourseDetails = () => {
 
   return (
     <div>
-      <div className="lg:w-[1260px] lg:relative flex flex-col md:flex-row gap-6 p-7 md:px-[75px] md:py-[32px] bg-richblack-800">
+      <div className="lg:w-[1260px] lg:relative flex flex-col sm:flex-row gap-6 p-7 md:px-[75px] md:py-[32px] bg-richblack-800">
         <div className="mx-auto md:mx-0 max-w-maxContentTab xl:max-w-[810px]">
           <div className="mt-5 flex flex-col justify-center gap-3">
             <p className="text-sm text-richblack-300">
@@ -121,6 +122,9 @@ const CourseDetails = () => {
               <RatingStars Review_Count={avgReviewCount} />
               <span className="hidden md:block text-base text-richblack-25">
                 ({courseDetail?.ratingAndReviews?.length} ratings)
+              </span>
+              <span className="block md:hidden text-base text-richblack-25">
+                ({courseDetail?.ratingAndReviews?.length})
               </span>
               <span className="text-base text-richblack-25">
                 {courseDetail?.studentsEnrolled?.length} students
@@ -255,7 +259,7 @@ const CourseDetails = () => {
                   )}{" "}
                   lectures • {courseDuration(courseDetail)} total length
                 </span>
-                <button className="text-sm font-medium text-yellow-50">
+                <button onClick={() => setIsOpen(!isOpen)} className="text-sm font-medium text-yellow-50">
                   <span>Collapse all sections</span>
                 </button>
               </div>
@@ -264,6 +268,7 @@ const CourseDetails = () => {
               {courseDetail?.courseContent?.map((item, index) => (
                 <details
                   key={index}
+                  open={isOpen}
                   className="border border-solid border-richblack-600 bg-richblack-700 detailanimatation"
                 >
                   <summary className="flex items-start justify-between bg-opacity-20 px-7 py-5 transition-[0.3s] cursor-pointer">

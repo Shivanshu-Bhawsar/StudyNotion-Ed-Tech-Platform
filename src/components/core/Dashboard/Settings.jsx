@@ -126,7 +126,7 @@ const Settings = () => {
 
         {/* update additional info */}
         <form onSubmit={handelAdditionalDetails} id="create-course-form">
-          <div className="p-8 px-12 flex flex-col gap-y-8 rounded-md border border-richblack-700 bg-richblack-800">
+          <div className="p-6 md:p-8 md:px-12 flex flex-col gap-y-8 rounded-md border border-richblack-700 bg-richblack-800">
             <h2 className="text-lg font-semibold text-richblack-5">
               Profile Information
             </h2>
@@ -247,9 +247,9 @@ const Settings = () => {
 
         {/* update Password */}
         <form onSubmit={handlePassword}>
-          <div className="p-8 px-12 mt-7 flex flex-col gap-y-8 rounded-md border border-richblack-700 bg-richblack-800">
+          <div className="p-6 md:p-8 md:px-12 mt-7 flex flex-col gap-y-8 rounded-md border border-richblack-700 bg-richblack-800">
             <h2 className="text-lg font-semibold text-richblack-5">Password</h2>
-            <div className="flex justify- gap-10">
+            <div className="flex flex-col sm:flex-row gap-10">
               <div className="relative flex flex-col gap-2 w-full">
                 <label htmlFor="oldPassword" className="lable-style">
                   <p className="text-[0.875rem] leading-[1.375rem] text-richblack-5">
@@ -334,7 +334,7 @@ const Settings = () => {
         </form>
 
         {/* Delete Account */}
-        <div className="mt-7 p-3 md:p-8 md:px-12 flex flex-row gap-x-5 rounded-md border border-pink-700 bg-pink-900">
+        <div className="mt-7 p-4 md:p-8 md:px-12 flex flex-row gap-x-5 rounded-md border border-pink-700 bg-pink-900">
           <div className="aspect-square h-14 w-14 flex items-center justify-center rounded-full bg-pink-700">
             <svg
               stroke="currentColor"
