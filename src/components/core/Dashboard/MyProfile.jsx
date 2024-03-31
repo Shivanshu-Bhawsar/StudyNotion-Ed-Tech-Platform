@@ -21,7 +21,7 @@ const MyProfile = () => {
   
 
   return (
-    <div className="mx-auto w-10/12 sm:w-9/12 max-w-[1000px] flex flex-col gap-5 pb-7 md:pb-0">
+    <div className="mx-auto w-10/12 sm:w-9/12 max-w-[1000px] flex flex-col gap-5 pb-7 md:pb-10 lg:pb-0">
       <h1 className="mb-8 text-3xl font-medium text-richblack-5">
         My Profile
       </h1>

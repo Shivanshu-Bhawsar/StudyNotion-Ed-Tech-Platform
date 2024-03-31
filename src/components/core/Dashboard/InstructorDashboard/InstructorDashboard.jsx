@@ -33,7 +33,7 @@ const InstructorDashboard = () => {
   const totalStudents = instructorData?.reduce((acc, course) => acc + course?.totalStudents, 0);
 
   return (
-    <div className="mx-auto w-11/12 max-w-[1000px] py-7 sm:py-10">
+    <div className="mx-auto w-11/12 max-w-[1000px] py-7">
       <div>
         <div className="space-y-2">
           <h1 className="text-2xl font-bold text-richblack-5">

@@ -440,14 +440,14 @@ export const searchCourses = async (searchQuery, dispatch) => {
     const response = await apiConnector("POST", SEARCH_COURSES_API, {
       searchQuery: searchQuery,
     });
-    console.log("SEARCH COURSES API RESPONSE............", response);
+    // console.log("SEARCH COURSES API RESPONSE............", response);
 
     if (!response?.data?.success) {
       throw new Error("Could Not Search Courses");
     }
     result = response?.data?.data;
   } catch (error) {
-    console.log("SEARCH COURSES API ERROR............", error);
+    // console.log("SEARCH COURSES API ERROR............", error);
     toast.error(error.message);
   }
   toast.dismiss(toastId)

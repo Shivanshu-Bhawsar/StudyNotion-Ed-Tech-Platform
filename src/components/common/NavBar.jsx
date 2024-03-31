@@ -46,7 +46,6 @@ const NavBar = ({ setProgress }) => {
   };
 
   const handelSearch = (e) => {
-    console.log(searchValue);
     e.preventDefault();
     if (searchValue?.length > 0) {
       navigate(`/search/${searchValue}`);

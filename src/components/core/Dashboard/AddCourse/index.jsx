@@ -18,7 +18,7 @@ const AddCourse = () => {
     }
 
   return (
-    <div className='mx-auto w-11/12 max-w-[1000px] pb-7 md:pb-0'>
+    <div className='mx-auto w-11/12 max-w-[1000px] pb-7 md:pb-10 lg:pb-0'>
         <div className='w-full flex items-start gap-x-7'>
             <div className='w-full md:w-[60%] flex flex-col'>
                 <h1 className='mx-auto md:mx-0 mb-14 text-3xl font-medium text-richblack-5'>Add Course</h1>
