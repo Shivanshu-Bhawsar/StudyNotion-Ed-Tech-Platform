@@ -35,7 +35,7 @@ const ViewCourse = () => {
 
   return (
     <div className="flex flex-col-reverse md:flex-row w-screen">
-      <div className="ml-5">
+      <div className="ml-4">
         <VideoDetailsSidebar setReviewModal={setReviewModal} />
       </div>
       <div>

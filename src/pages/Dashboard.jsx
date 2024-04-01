@@ -19,7 +19,7 @@ const Dashboard = () => {
     <div className="relative flex h-screen">
       <Sidebar />
       <div className="flex-1 overflow-auto bg-richblack-900">
-        <div className="py-10">
+        <div className="py-14">
           <Outlet />
         </div>
       </div>

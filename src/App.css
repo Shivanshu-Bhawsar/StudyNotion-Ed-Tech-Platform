@@ -162,16 +162,6 @@ input[type=password]::-ms-clear {
     display: none;
 }
 
-.swiper-button-prev {
-    transform: translateX(-90%);
-    color: #dcdcdc !important;
-}
-
-.swiper-button-next {
-    transform: translateX(90%);
-    color: #dcdcdc !important;
-}
-
 .swiper-pagination-bullet-active {
     background-color: rgb(186, 32, 32) !important;
 }

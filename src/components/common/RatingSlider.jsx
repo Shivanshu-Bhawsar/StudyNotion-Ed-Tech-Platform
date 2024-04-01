@@ -32,40 +32,21 @@ const RatingSlider = () => {
   return (
     <div className="mt-5">
       <Swiper
-        mousewheel={{
-          enabled: true,
-          forceToAxis: true,
-        }}
-        keyboard={{
-          enabled: true,
-          onlyInViewport: true,
-        }}
-        allowSlidePrev={true}
         slidesPerView={4}
-        loop={true}
         spaceBetween={20}
-        modules={[Navigation, Autoplay, FreeMode, Mousewheel, Keyboard]}
+        modules={[Navigation, Autoplay, FreeMode]}
         className="mySwiper md:pt-5"
-        speed={1600}
+        loop={true}
         autoplay={{
            delay: 2000,
            disableOnInteraction: false,
         }}
-        style={{
-          "--swiper-navigation-size": "20px",
-        }}
+        speed={1600}
         freeMode={true}
-        rewind={false}
-        navigation={
-            {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-        }
         breakpoints={{
-          300: { slidesPerView: 1.1, spaceBetween: 10 },
-          640: { slidesPerView: 2.2 },
-          1024: { slidesPerView: 3.1 },
+          300: { slidesPerView: 1, spaceBetween: 10 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
       >
         {reviews?.map((review, index) => (
@@ -93,8 +74,6 @@ const RatingSlider = () => {
             </div>
           </SwiperSlide>
         ))}
-        <div className='swiper-button-next'></div>
-        <div className='swiper-button-prev'></div>
       </Swiper>
     </div>
   );

@@ -56,7 +56,7 @@ const MyProfile = () => {
       </div>
 
       {/* section 2 */}
-      <div className="p-3 md:p-8 md:px-12 flex justify-between rounded-md border border-richblack-700 bg-richblack-800">
+      <div className="p-6 md:p-8 md:px-12 flex justify-between rounded-md border border-richblack-700 bg-richblack-800">
         <div className="flex flex-col gap-12">
           <p className="text-xl font-semibold text-richblack-5">About</p>
           <p className="text-sm font-medium text-richblack-300">
@@ -76,7 +76,7 @@ const MyProfile = () => {
       </div>
 
       {/* section 3 */}
-      <div className="p-3 md:p-8 md:px-12 flex flex-col gap-y-10 rounded-md border border-richblack-700 bg-richblack-800">
+      <div className="p-6 md:p-8 md:px-12 flex flex-col gap-y-10 rounded-md border border-richblack-700 bg-richblack-800">
         <div className="flex items-center justify-between">
           <p className="text-xl font-semibold text-richblack-5">
             Personal Details
