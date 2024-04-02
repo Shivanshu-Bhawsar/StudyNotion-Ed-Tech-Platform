@@ -96,15 +96,15 @@ const Catalog = () => {
           <CourseSlider Courses={catalogPageData?.selectedCourses} />
         </div>
 
-        <div className="mx-autot w-full max-w-maxContentTab box-conten px-4 py-12 lg:max-w-maxContent">
-          <h2 className="section_heading mb-9 text-xl sm:text-2xl md:text-3xl font-semibold text-richblack-5">
+        <div className="mx-auto w-full max-w-maxContentTab box-content px-4 py-12 lg:max-w-maxContent">
+          <h2 className="mb-9 text-xl sm:text-2xl md:text-3xl font-semibold text-richblack-5">
             Top Courses in other Categories
           </h2>
           <CourseSlider Courses={catalogPageData?.differentCourses} />
         </div>
 
         <div className="mx-auto w-full max-w-maxContentTab box-content px-2 py-12 lg:max-w-maxContent">
-          <h2 className="section_heading mb-9 text-xl sm:text-2xl md:text-3xl font-semibold text-richblack-5">
+          <h2 className="mb-9 text-xl sm:text-2xl md:text-3xl font-semibold text-richblack-5">
             Frequently Bought Together
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-6 pr-4">

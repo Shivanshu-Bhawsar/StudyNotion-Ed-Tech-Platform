@@ -100,8 +100,8 @@ const CourseDetails = () => {
 
   return (
     <div>
-      <div className="lg:w-[1260px] lg:relative flex flex-col sm:flex-row gap-6 p-7 md:px-[75px] md:py-[32px] bg-richblack-800">
-        <div className="mx-auto md:mx-0 max-w-maxContentTab xl:max-w-[810px]">
+      <div className="lg:relative flex flex-col sm:flex-row gap-6 p-7 md:px-[75px] md:py-[32px] bg-richblack-800">
+        <div className="ml-5 sm:ml-0 max-w-maxContentTab">
           <div className="mt-5 flex flex-col justify-center gap-3">
             <p className="text-sm text-richblack-300">
               Home / Catalog /{" "}
@@ -157,8 +157,8 @@ const CourseDetails = () => {
           </div>
         </div>
 
-        <div className="mx-auto flex min-h-[600px] max-w-[384px] lg:absolute right-[6rem] top-[55px]">
-          <div className="p-3 sm:p-5 flex flex-col gap-4 rounded-md bg-richblack-700">
+        <div className="ml-5 sm:ml-0 flex min-h-[600px] max-w-[384px] lg:absolute right-[6rem] top-[55px]">
+          <div className="-3 sm:p-5 flex flex-col gap-4 rounded-md bg-richblack-700">
             <div className="max-h-[300px] md:w-[384px] md:max-w-full">
               <img
                 src={courseDetail?.thumbnail}
@@ -238,8 +238,8 @@ const CourseDetails = () => {
         </div>
       </div>
 
-      <div className="mx-auto  w-11/12  px-4 text-start text-richblack-5">
-        <div className="mx-auto max-w-maxContentTab lg:mx-0 xl:max-w-[810px]">
+      <div className="mx-auto w-11/12 px-4 text-start text-richblack-5">
+        <div className="max-w-maxContentTab">
           <div className="my-8 flex flex-col gap-3 border border-richblack-600 p-8">
             <p className="text-3xl font-semibold">What you'll learn</p>
             <div className="flex flex-col gap-2 text-sm font-medium text-richblack-50">
