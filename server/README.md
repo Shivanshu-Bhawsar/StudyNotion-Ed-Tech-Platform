@@ -104,44 +104,44 @@ The server is configured in `index.js` with the following key features:
     - Account details (name, email, password)
     - Account type (Student, Instructor, Admin)
     - Course enrollments
-   - Course progress
+    - Course progress
     - Additional details (Profile) reference
     - Token details
 
-### 2. Course Model
-- Course information (name, description, price, status)
-- Instructor reference
-- Course content structure
-- Student enrollments reference
-- Ratings and reviews
-- Category reference
+2. **Course Model**
+    - Course information (name, description, price, status)
+    - Instructor reference
+    - Course content structure
+    - Student enrollments reference
+    - Ratings and reviews
+    - Category reference
 
-### 3. Category Model
-- Name and description
-- Course references
+3. **Category Model**
+    - Name and description
+    - Course references
 
-### 4. Section & Subsection Models
-- Course content organization (section & sub-section name)
-- Video/content url
-- Duration tracking
+4. **Section & Subsection Models**
+    - Course content organization (section & sub-section name)
+    - Video/content url
+    - Duration tracking
 
-### 5. Profile Model
-- User information (gender, dob, about, contact)
+5. **Profile Model**
+    - User information (gender, dob, about, contact)
 
-### 6. Rating & Review Model
-- User references
-- Course ratings
-- User reviews
-- Course references
+6. **Rating & Review Model**
+    - User references
+    - Course ratings
+    - User reviews
+    - Course references
 
-### 7. Course Progress Model
-- Course references
-- User references
-- Completed lectures tracking
+7. **Course Progress Model**
+    - Course references
+    - User references
+    - Completed lectures tracking
 
-### 8. Cart Model
-- User reference
-- Cart items (Course references)
+8. **Cart Model**
+    - User reference
+    - Cart items (Course references)
 
 ## Middlewares
 
