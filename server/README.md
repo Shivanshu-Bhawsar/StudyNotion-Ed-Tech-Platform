@@ -37,6 +37,21 @@ This is the backend server for StudyNotion, a comprehensive EdTech platform. The
     - Cloudinary configuration
     - Environment variables support
 
+## Project Structure
+
+The backend application follows a well-organized structure:
+
+```
+server/
+├── config/         # Configuration files (DB, cloud services)
+├── controllers/    # Request handlers and business logic
+├── middlewares/    # Custom middleware functions
+├── models/         # Database schemas and models
+├── routes/         # API route definitions
+├── utils/          # Utility and helper functions
+└── mail/          # Email templates and services
+```
+
 ## API Routes
 
 1. **Auth Routes (`/api/v1/auth`)**
