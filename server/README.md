@@ -15,27 +15,27 @@ This is the backend server for StudyNotion, a comprehensive EdTech platform. The
 
 ## Tech Stack
 
-- Node.js
-- Express.js
-- MongoDB (with Mongoose)
-- JWT for Authentication
-- Bcrypt for Password Hashing
-- Express-fileupload for File Handling
-- Cloudinary for Media Storage
-- Nodemailer for Email Services
-- Razorpay for Payment Integration
+    - Node.js
+    - Express.js
+    - MongoDB (with Mongoose)
+    - JWT for Authentication
+    - Bcrypt for Password Hashing
+    - Express-fileupload for File Handling
+    - Cloudinary for Media Storage
+    - Nodemailer for Email Services
+    - Razorpay for Payment Integration
 
 ## Server Configuration
 
-The server is configured in `index.js` with the following key features:
+    The server is configured in `index.js` with the following key features:
 
-- Cross-Origin Resource Sharing (CORS) enabled
-- JSON body parsing
-- Cookie parsing
-- File upload handling
-- Database connection
-- Cloudinary configuration
-- Environment variables support
+    - Cross-Origin Resource Sharing (CORS) enabled
+    - JSON body parsing
+    - Cookie parsing
+    - File upload handling
+    - Database connection
+    - Cloudinary configuration
+    - Environment variables support
 
 ## API Routes
 
