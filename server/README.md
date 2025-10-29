@@ -100,13 +100,13 @@ The server is configured in `index.js` with the following key features:
 
 ## Database Models
 
-### 1. User Model
-- Account details (name, email, password)
-- Account type (Student, Instructor, Admin)
-- Course enrollments
-- Course progress
-- Additional details (Profile) reference
-- Token details
+1. **User Model**
+    - Account details (name, email, password)
+    - Account type (Student, Instructor, Admin)
+    - Course enrollments
+    - Course progress
+    - Additional details (Profile) reference
+    - Token details
 
 ### 2. Course Model
 - Course information (name, description, price, status)
