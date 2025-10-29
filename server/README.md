@@ -39,38 +39,38 @@ This is the backend server for StudyNotion, a comprehensive EdTech platform. The
 
 ## API Routes
 
-### 1. Auth Routes (`/api/v1/auth`)
-- `POST /signup` - Register new user
-- `POST /login` - User login
-- `POST /sendotp` - Send OTP for verification
-- `POST /reset-password-token` - Request password reset
-- `POST /reset-password` - Reset password
-- `POST /changepassword` - Change password (Auth required)
+1. **Auth Routes (`/api/v1/auth`)**
+    - `POST /signup` - Register new user
+    - `POST /login` - User login
+    - `POST /sendotp` - Send OTP for verification
+    - `POST /reset-password-token` - Request password reset
+    - `POST /reset-password` - Reset password
+    - `POST /changepassword` - Change password (Auth required)
 
-### 2. Profile Routes (`/api/v1/profile`)
-- `DELETE /deleteProfile` - Delete user account
-- `GET /getUserDetails` - Get user information
-- `PUT /updateProfile` - Update profile details
-- `PUT /updateDisplayPicture` - Update profile picture
-- `GET /getEnrolledCourses` - Get user's enrolled courses
-- `GET /getInstructorDashboardDetails` - Get instructor dashboard
-- `GET /getAdminPanelDetails` - Get admin panel details
-- `GET /getInstructorsDetails` - Get all instructors' details
-- `POST /addToCart` - Add course to cart
-- `PUT /removeFromCart` - Remove course from cart
-- `GET /getCartData` - Get cart details
-- `PUT /resetCartData` - Reset cart
+2. **Profile Routes (`/api/v1/profile`)**
+    - `DELETE /deleteProfile` - Delete user account
+    - `GET /getUserDetails` - Get user information
+    - `PUT /updateProfile` - Update profile details
+    - `PUT /updateDisplayPicture` - Update profile picture
+    - `GET /getEnrolledCourses` - Get user's enrolled courses
+    - `GET /getInstructorDashboardDetails` - Get instructor dashboard
+    - `GET /getAdminPanelDetails` - Get admin panel details
+    - `GET /getInstructorsDetails` - Get all instructors' details
+    - `POST /addToCart` - Add course to cart
+    - `PUT /removeFromCart` - Remove course from cart
+    - `GET /getCartData` - Get cart details
+    - `PUT /resetCartData` - Reset cart
 
-### 3. Course Routes (`/api/v1/course`)
-- `POST /createCourse` - Create new course
-- `POST /editCourse` - Edit existing course
-- `GET /getAllCourses` - Get all courses
-- `POST /getCourseDetails` - Get course details
-- `GET /getInstructorCourses` - Get instructor's courses
-- `POST /getFullCourseDetails` - Get complete course details
-- `DELETE /deleteCourse` - Delete course
-- `POST /updateCourseProgress` - Update course progress
-- `POST /searchCourse` - Search courses
+3. **Course Routes (`/api/v1/course`)**
+    - `POST /createCourse` - Create new course
+    - `POST /editCourse` - Edit existing course
+    - `GET /getAllCourses` - Get all courses
+    - `POST /getCourseDetails` - Get course details
+    - `GET /getInstructorCourses` - Get instructor's courses
+    - `POST /getFullCourseDetails` - Get complete course details
+    - `DELETE /deleteCourse` - Delete course
+    - `POST /updateCourseProgress` - Update course progress
+    - `POST /searchCourse` - Search courses
 
 #### Category Related:
 - `POST /createCategory` - Create course category
@@ -90,13 +90,13 @@ This is the backend server for StudyNotion, a comprehensive EdTech platform. The
 - `GET /getAverageRating` - Get course average rating
 - `GET /getAllRating` - Get all course ratings
 
-### 4. Payment Routes (`/api/v1/payment`)
-- `POST /capturePayment` - Initialize payment
-- `POST /verifyPayment` - Verify payment
-- `POST /sendPaymentSuccessEmail` - Send payment confirmation
+4. **Payment Routes (`/api/v1/payment`)**
+    - `POST /capturePayment` - Initialize payment
+    - `POST /verifyPayment` - Verify payment
+    - `POST /sendPaymentSuccessEmail` - Send payment confirmation
 
-### 5. Contact Routes (`/api/v1/contact`)
-- `POST /contactUs` - Send contact form
+5. **Contact Routes (`/api/v1/contact`)**
+    - `POST /contactUs` - Send contact form
 
 ## Database Models
 
