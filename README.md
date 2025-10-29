@@ -50,15 +50,15 @@ src/
 
 ## Components
 
-### 1. Common Components (`/components/common`)
-- `NavBar` - Main navigation bar
-- `Footer` - Site footer
-- `IconBtn` - Reusable icon button
-- `ConfirmationModal` - Confirmation dialog
-- `RatingStars` - Star rating component
-- `Tab` - Tab navigation component
+1. **Common Components (`/components/common`)**
+    - `NavBar` - Main navigation bar
+    - `Footer` - Site footer
+    - `IconBtn` - Reusable icon button
+    - `ConfirmationModal` - Confirmation dialog
+    - `RatingStars` - Star rating component
+    - `Tab` - Tab navigation component
 
-### 2. Core Components (`/components/core`)
+2. **Core Components (`/components/core`)**
 
 #### Authentication (`/core/Auth`)
 - `LoginForm` - User login form
@@ -124,44 +124,44 @@ src/
 
 ## State Management
 
-### Redux Slices (`/slices`)
-- `authSlice` - Authentication state
-- `cartSlice` - Shopping cart state
-- `courseSlice` - Course management
-- `profileSlice` - User profile data
-- `viewCourseSlice` - Course viewing state
+**Redux Slices (`/slices`)**
+    - `authSlice` - Authentication state
+    - `cartSlice` - Shopping cart state
+    - `courseSlice` - Course management
+    - `profileSlice` - User profile data
+    - `viewCourseSlice` - Course viewing state
 
 ## Services
 
-### API Operations (`/services/operations`)
-- `authAPI` - Authentication operations
-- `courseDetailsAPI` - Course data handling
-- `profileAPI` - Profile management
-- `studentFeaturesAPI` - Student-specific features
+1. **API Operations (`/services/operations`)**
+    - `authAPI` - Authentication operations
+    - `courseDetailsAPI` - Course data handling
+    - `profileAPI` - Profile management
+    - `studentFeaturesAPI` - Student-specific features
 
-### API Configuration
-- `apiConnector` - Axios instance setup
-- `apis` - API endpoint definitions
+2. **API Configuration*
+    - `apiConnector` - Axios instance setup
+    - `apis` - API endpoint definitions
 
 ## Utils
 
 1. **Helper Functions**
-- `avgRating` - Calculate average ratings
-- `formatDate` - Date formatting
-- `secToDuration` - Time format conversion
-- `constants` - Application constants
+    - `avgRating` - Calculate average ratings
+    - `formatDate` - Date formatting
+    - `secToDuration` - Time format conversion
+    - `constants` - Application constants
 
 2. **Custom Hooks**
-- `useOnClickOutside` - Click outside detection
+    - `useOnClickOutside` - Click outside detection
 
 ## Data
 
 1. **Static Data**
-- `countrycode.json` - Country codes
-- `dashboard-links` - Dashboard navigation
-- `footer-links` - Footer navigation
-- `homepage-explore` - Homepage content
-- `navbar-links` - Navigation links
+    - `countrycode.json` - Country codes
+    - `dashboard-links` - Dashboard navigation
+    - `footer-links` - Footer navigation
+    - `homepage-explore` - Homepage content
+    - `navbar-links` - Navigation links
 
 ## Features
 
