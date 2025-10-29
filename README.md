@@ -124,7 +124,7 @@ src/
 
 ## State Management
 
-**Redux Slices (`/slices`)**
+1. **Redux Slices (`/slices`)**
     - `authSlice` - Authentication state
     - `cartSlice` - Shopping cart state
     - `courseSlice` - Course management
