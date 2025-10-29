@@ -72,12 +72,12 @@ This is the backend server for StudyNotion, a comprehensive EdTech platform. The
     - `POST /updateCourseProgress` - Update course progress
     - `POST /searchCourse` - Search courses
 
-#### **Category Related:**
+    **Category Related:**
     - `POST /createCategory` - Create course category
     - `GET /showAllCategories` - Show all categories
     - `POST /getCategoryPageDetails` - Get category page details
 
-#### **Section and Subsection:**
+    **Section and Subsection:**
     - `POST /addSection` - Add course section
     - `POST /updateSection` - Update section
     - `POST /deleteSection` - Delete section
@@ -85,7 +85,7 @@ This is the backend server for StudyNotion, a comprehensive EdTech platform. The
     - `POST /updateSubSection` - Update subsection
     - `POST /deleteSubSection` - Delete subsection
 
-#### **Ratings and Reviews:**
+    **Ratings and Reviews:**
     - `POST /createRating` - Create course rating
     - `GET /getAverageRating` - Get course average rating
     - `GET /getAllRating` - Get all course ratings
