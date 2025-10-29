@@ -104,7 +104,7 @@ The server is configured in `index.js` with the following key features:
     - Account details (name, email, password)
     - Account type (Student, Instructor, Admin)
     - Course enrollments
-    - Course progress
+   - Course progress
     - Additional details (Profile) reference
     - Token details
 
