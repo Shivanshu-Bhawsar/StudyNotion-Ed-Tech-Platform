@@ -60,43 +60,43 @@ src/
 
 2. **Core Components (`/components/core`)**
 
-#### Authentication (`/core/Auth`)
-- `LoginForm` - User login form
-- `SignupForm` - User registration
-- `PrivateRoute` - Protected route wrapper
-- `OpenRoute` - Public route wrapper
-- `ProfileDropDown` - User profile dropdown
+    **Authentication (`/core/Auth`)**
+    - `LoginForm` - User login form
+    - `SignupForm` - User registration
+    - `PrivateRoute` - Protected route wrapper
+    - `OpenRoute` - Public route wrapper
+    - `ProfileDropDown` - User profile dropdown
 
-#### Dashboard (`/core/Dashboard`)
-- `Sidebar` - Dashboard navigation
-- `EnrolledCourses` - User's enrolled courses
-- `MyProfile` - User profile management
-- `Settings` - Account settings
-- `Category` - Account settings
-- `Course` - Account settings
+    **Dashboard (`/core/Dashboard`)**
+    - `Sidebar` - Dashboard navigation
+    - `EnrolledCourses` - User's enrolled courses
+    - `MyProfile` - User profile management
+    - `Settings` - Account settings
+    - `Category` - Account settings
+    - `Course` - Account settings
 
-#### Course Management
-- `AddCourse` - Course creation interface
-- `CourseBuilder` - Course content builder
-- `EditCourse` - Course editing interface
-- `CourseInformation` - Course details display
-- `AddCategory` - Category creation interface
+    **Course Management**
+    - `AddCourse` - Course creation interface
+    - `CourseBuilder` - Course content builder
+    - `EditCourse` - Course editing interface
+    - `CourseInformation` - Course details display
+    - `AddCategory` - Category creation interface
 
-#### Admin Features
-- `AdminPanel` - Admin dashboard
-- `DashboardChart` - Analytics visualization
-- `InstructorDashboard` - Instructor dashboard
-- `InstructorDetails` - Instructor management
+    **Admin Features**
+    - `AdminPanel` - Admin dashboard
+    - `DashboardChart` - Analytics visualization
+    - `InstructorDashboard` - Instructor dashboard
+    - `InstructorDetails` - Instructor management
 
-#### Cart Management
-- `Cart` - Shopping cart interface
-- `RenderCartCourses` - Cart items display
-- `RenderTotalAmount` - Price calculation
+    **Cart Management**
+    - `Cart` - Shopping cart interface
+    - `RenderCartCourses` - Cart items display
+    - `RenderTotalAmount` - Price calculation
 
-#### View Course
-- `VideoDetails` - Course video player
-- `VideoDetailsSidebar` - Content navigation
-- `ReviewModal` - Course review interface
+    **View Course**
+    - `VideoDetails` - Course video player
+    - `VideoDetailsSidebar` - Content navigation
+    - `ReviewModal` - Course review interface
 
 ## Pages
 
@@ -139,7 +139,7 @@ src/
     - `profileAPI` - Profile management
     - `studentFeaturesAPI` - Student-specific features
 
-2. **API Configuration*
+2. **API Configuration**
     - `apiConnector` - Axios instance setup
     - `apis` - API endpoint definitions
 
